@@ -56,5 +56,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # OpenFoodFact API
 gem 'openfoodfacts', '~> 0.5.1'
-gem 'nokogiri', '~> 1.7'
-gem 'hashie', '~> 4.1'
