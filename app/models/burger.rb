@@ -1,5 +1,5 @@
 class Burger < ApplicationRecord
-    def nutiments
+    def nutriments
         require 'openfoodfacts'
 
         product = Openfoodfacts::Product.get(self.code, locale: 'fr')

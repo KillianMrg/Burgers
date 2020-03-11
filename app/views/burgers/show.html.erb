@@ -34,16 +34,15 @@
     <tr>
       <th>Name</th>
       <th>Value</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @burger.nutriments.each do |nutriment| %>
-    <tr>
-      <td><%= nutriment[0].capitalize %></td>
-      <td><%= nutriment[1] %></td>
-    </tr>
-  <% end %>
+    <% @burger.nutriments do |nutriment| %>
+      <tr>
+        <td><%= nutriment[0] %></td>
+        <td><%= nutriment[1] %></td>
+      </tr>
+    <% end %>
   </tbody>
 </table>
