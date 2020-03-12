@@ -38,7 +38,7 @@
   </thead>
 
   <tbody>
-    <% @burger.nutriments do |nutriment| %>
+    <% @burger.nutriments.each do |nutriment| %>
       <tr>
         <td><%= nutriment[0] %></td>
         <td><%= nutriment[1] %></td>
